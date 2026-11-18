@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101014">
+<title>FF Likes Hub - Free Fire Tools</title>
+<meta name="description" content="Free Fire UID tools, gaming guides and helpful tutorials.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#101014;color:#fff}
+header{padding:18px 16px;background:#19191f;
+display:flex;justify-content:space-between;align-items:center;
+border-bottom:1px solid #303039}
+.logo{font-size:22px;font-weight:900;color:#ffb000}
+nav a{color:#ddd;text-decoration:none;margin-left:12px;font-size:13px}
+.hero{padding:48px 18px;text-align:center;
+background:radial-gradient(circle at top,#49300e,#17131b 65%,#101014)}
+.tag{color:#ffb000;font-size:12px;letter-spacing:2px}
+h1{font-size:34px;margin:15px 0}
+h1 span{color:#ffb000}
+.hero p{color:#ccc;line-height:1.6;max-width:450px;margin:auto}
+.card{background:#202027;border:1px solid #383841;
+border-radius:15px;padding:22px;margin:25px auto;
+max-width:440px;text-align:left}
+.card h2{text-align:center;margin-bottom:10px}
+.card p{color:#aaa;text-align:center;font-size:13px;line-height:1.5}
+label{display:block;margin:20px 0 8px;font-size:14px}
+input{width:100%;padding:15px;border-radius:9px;
+border:1px solid #494951;background:#121217;color:white;font-size:16px}
+button{width:100%;padding:15px;margin-top:15px;
+border:0;border-radius:9px;background:#ffb000;
+font-size:16px;font-weight:bold;color:#17120a;cursor:pointer}
+#message{margin-top:14px;text-align:center;font-size:13px;line-height:1.5;color:#ffd36c}
+.section{padding:28px 18px;max-width:750px;margin:auto}
+.section h2{color:#ffb000;margin-bottom:18px}
+.feature{background:#202027;padding:17px;border-radius:10px;
+margin-bottom:12px;line-height:1.5}
+.feature p{color:#bbb;font-size:14px;margin-top:6px}
+footer{text-align:center;background:#19191f;padding:25px;color:#aaa;
+font-size:13px;line-height:2}
+footer a{color:#ffb000;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">🔥 FF LIKES HUB</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#guide">Guide</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="tag">FREE FIRE GAMING TOOLS</div>
+<h1>WELCOME TO <span>FF LIKES HUB</span></h1>
+<p>Your gaming destination for Free Fire guides, UID tools and useful tutorials.</p>
+
+<div class="card">
+<h2>🔥 FREE FIRE UID TOOL</h2>
+<p>Enter your player UID to get started.</p>
+<label for="uid">Free Fire Player UID</label>
+<input id="uid" type="text" inputmode="numeric"
+placeholder="Enter your UID" maxlength="20">
+<button onclick="checkUID()">CHECK UID</button>
+<div id="message" role="status"></div>
+</div>
+</section>
+
+<section class="section" id="guide">
+<h2>🎮 What We Offer</h2>
+<div class="feature">
+<strong>🔥 Free Fire Guides</strong>
+<p>Learn useful gaming tips and tricks.</p>
+</div>
+<div class="feature">
+<strong>👤 UID Tools</strong>
+<p>Explore helpful player UID tools and resources.</p>
+</div>
+<div class="feature">
+<strong>📚 Gaming Tutorials</strong>
+<p>Read tutorials, updates and beginner guides.</p>
+</div>
+</section>
+
+<section class="section">
+<h2>❓ Frequently Asked Questions</h2>
+<div class="feature">
+<strong>Is this website free?</strong>
+<p>Yes, our guides and website tools are intended to be free.</p>
+</div>
+<div class="feature">
+<strong>Do I need my Free Fire password?</strong>
+<p>No. Never share your game password or OTP with third-party websites.</p>
+</div>
+<div class="feature">
+<strong>Are real likes available?</strong>
+<p>Real likes service is not connected yet. We will only activate it after an authorized service becomes available.</p>
+</div>
+</section>
+
+<footer>
+<strong>FF LIKES HUB</strong><br>
+Gaming guides and useful resources.<br>
+<a href="#home">Home</a> |
+<a href="#guide">Guides</a><br>
+© 2026 FF Likes Hub
+</footer>
+
+<script>
+function checkUID(){
+ const uid=document.getElementById("uid").value.trim();
+ const msg=document.getElementById("message");
+
+ if(!/^[0-9]{5,20}$/.test(uid)){
+   msg.textContent="Please enter a valid numeric UID (5–20 digits).";
+   return;
+ }
+
+ msg.textContent="UID format is valid. Real likes service is not connected yet.";
+}
+</script>
+
+</body>
+</html>
